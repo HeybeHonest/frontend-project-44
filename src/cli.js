@@ -1,7 +1,7 @@
+#!/usr/bin/env node
 import readlineSync from 'readline-sync';
 
-// eslint-disable-next-line import/prefer-default-export
-export const greetingsAndName = () => {
+const greetingsAndName = () => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${userName}`);
@@ -9,7 +9,4 @@ export const greetingsAndName = () => {
   return userName;
 };
 
-export const getAnswer = (question) => {
-  console.log(`Question: ${question}`);
-  return readlineSync.question('Your answer: ');
-};
+export default greetingsAndName;
