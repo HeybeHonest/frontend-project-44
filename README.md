@@ -10,3 +10,5 @@
 <a href="https://asciinema.org/a/vLAXaahO6n0JwWMudCV8zK3A0">>Asciinema Lesson #7</a>
 
 <a href="https://asciinema.org/a/J30DQztJJGFCJnDIAV1dkSImX">Asciinema Lesson #8</a>
+
+<a href="https://asciinema.org/a/izHXtqoQWB8sO3Rboz7ze5UfV">Asciinema Lesson #9</a>
