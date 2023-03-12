@@ -6,5 +6,3 @@ publish:
 	npm publish --dry-run
 lint:
 	npx eslint .
-brain-even:
-	node bin/games/brain-even.js
