@@ -4,7 +4,7 @@ import randomNumber from '../utils.js';
 
 const gameDescription = 'What is the result of the expression?';
 const operators = ['*', '+', '-'];
-const calcGame = () => {
+const generateData = () => {
   const a = randomNumber(0, 100);
   const b = randomNumber(0, 100);
   const operator = operators[randomNumber(0, operators.length - 1)];
@@ -28,7 +28,7 @@ const calcGame = () => {
 };
 
 const startCalcGame = () => {
-  startGame(gameDescription, calcGame);
+  startGame(gameDescription, generateData);
 };
 
 export default startCalcGame;

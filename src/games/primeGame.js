@@ -14,7 +14,7 @@ const getPrime = (num) => {
   return true;
 };
 
-const primeGame = () => {
+const generateData = () => {
   const question = randomNumber(0, 1000);
   const answer = getPrime(question) ? 'yes' : 'no';
 
@@ -22,7 +22,7 @@ const primeGame = () => {
 };
 
 const startPrimeGame = () => {
-  startGame(gameDescription, primeGame);
+  startGame(gameDescription, generateData);
 };
 
 export default startPrimeGame;

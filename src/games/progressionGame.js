@@ -14,7 +14,7 @@ const getProgression = (firstElement, step, length) => {
   return arr;
 };
 
-const progressionGame = () => {
+const generateData = () => {
   const firstElement = randomNumber(0, 100);
   const progressionStep = randomNumber(1, 10);
   const hiddenElement = randomNumber(0, arrLength - 1);
@@ -28,7 +28,7 @@ const progressionGame = () => {
 };
 
 const startProgressionGame = () => {
-  startGame(gameDescription, progressionGame);
+  startGame(gameDescription, generateData);
 };
 
 export default startProgressionGame;
