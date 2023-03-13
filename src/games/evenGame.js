@@ -6,15 +6,14 @@ const gameDescription = 'Answer "yes" if the number is even, otherwise answer "n
 
 const isEven = (num) => num % 2 === 0;
 
-const generateData = () => {
+const generateDataEven = () => {
   const question = randomNumber(1, 100);
   const answer = isEven(question) ? 'yes' : 'no';
-
   return [question.toString(), answer];
 };
 
 const startEvenGame = () => {
-  startGame(gameDescription, generateData);
+  startGame(gameDescription, generateDataEven);
 };
 
 export default startEvenGame;
