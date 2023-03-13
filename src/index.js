@@ -22,7 +22,7 @@ const startGame = (gameTitle, gameEngine) => {
     }
     console.log('Correct!');
   }
-  console.log(`Congratulations, ${userName}`);
+  console.log(`Congratulations, ${userName}!`);
 };
 
 export default startGame;
