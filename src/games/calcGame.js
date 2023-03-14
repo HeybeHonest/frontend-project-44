@@ -9,19 +9,16 @@ const generateData = () => {
   const operator = operators[randomNumber(0, operators.length - 1)];
   const question = `${a} ${operator} ${b}`;
   let result = 0;
-  switch (operator) {
-    case '*':
-      result = a * b;
-      break;
-    case '+':
-      result = a + b;
-      break;
-    case '-':
-      result = a - b;
-      break;
-    default:
-      return false;
+  if (operator === '*') {
+    result = a * b;
   }
+  if (operator === '+') {
+    result = a + b;
+  }
+  if (operator === '-') {
+    result = a - b;
+  }
+
   const answer = result.toString();
   return [question, answer];
 };
