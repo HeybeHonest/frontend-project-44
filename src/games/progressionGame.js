@@ -1,12 +1,11 @@
-import randomNumber from '../utils.js';
+import { randomNumber } from '../utils.js';
 import startGame from '../index.js';
 
 const gameDescription = 'What number is missing in the progression?';
 const arrLength = 10;
 
 const getProgression = (firstElement, step, length) => {
-  const arr = [];
-  arr[0] = firstElement;
+  const arr = [firstElement];
   for (let i = 1; i < length; i += 1) {
     arr[i] = arr[i - 1] + step;
   }
