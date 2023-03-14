@@ -5,8 +5,10 @@ const roundCount = 3;
 const startGame = (gameTitle, gameEngine) => {
   console.log('Welcome to the Brain Games!');
   const userName = readlineSync.question('May I have your name? ');
-  const congrats = `Congratulations, ${userName}!`;
-  console.log(`Hello, ${userName}`);
+  let upperName = userName;
+  upperName = upperName[0].toUpperCase() + upperName.slice(1);
+  const congrats = `Congratulations, ${upperName}!`;
+  console.log(`Hello, ${upperName}`);
   console.log(gameTitle);
 
   for (let i = 0; i < roundCount; i += 1) {
@@ -17,7 +19,7 @@ const startGame = (gameTitle, gameEngine) => {
 
     if (answer !== userAnswer) {
       console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${answer}'`);
-      console.log(`Let's try again, ${userName}!`);
+      console.log(`Let's try again, ${upperName}!`);
       return;
     }
     console.log('Correct!');
