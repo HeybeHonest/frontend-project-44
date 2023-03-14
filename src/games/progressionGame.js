@@ -15,11 +15,11 @@ const getProgression = (firstElement, step, length) => {
 const generateData = () => {
   const firstElement = randomNumber(0, 100);
   const progressionStep = randomNumber(1, 10);
-  const hiddenElement = randomNumber(0, arrLength - 1);
+  const hiddenElementIndex = randomNumber(0, arrLength - 1);
   const progression = getProgression(firstElement, progressionStep, arrLength);
 
-  const answer = progression[hiddenElement].toString();
-  progression[hiddenElement] = '..';
+  const answer = progression[hiddenElementIndex].toString();
+  progression[hiddenElementIndex] = '..';
   const question = progression.join(' ');
 
   return [question, answer];
