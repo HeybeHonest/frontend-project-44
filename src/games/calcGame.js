@@ -1,5 +1,5 @@
 import startGame from '../index.js';
-import randomNumber from '../utils.js';
+import { randomNumber, calculate } from '../utils.js';
 
 const gameDescription = 'What is the result of the expression?';
 const operators = ['*', '+', '-'];
@@ -8,16 +8,7 @@ const generateData = () => {
   const b = randomNumber(0, 100);
   const operator = operators[randomNumber(0, operators.length - 1)];
   const question = `${a} ${operator} ${b}`;
-  let result = 0;
-  if (operator === '*') {
-    result = a * b;
-  }
-  if (operator === '+') {
-    result = a + b;
-  }
-  if (operator === '-') {
-    result = a - b;
-  }
+  const result = calculate(a, b, operator);
 
   const answer = result.toString();
   return [question, answer];
