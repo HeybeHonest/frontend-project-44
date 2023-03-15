@@ -15,7 +15,7 @@ const generateData = () => {
       if (numOne > numTwo) {
         numOne %= numTwo;
       } else {
-        numTwo %= numTwo;
+        numTwo %= numOne;
       }
       result = numOne + numTwo;
     }
