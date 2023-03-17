@@ -12,7 +12,7 @@ const calculate = (num1, num2, mathSign) => {
     case '+':
       sum = num1 + num2;
       break;
-    default:
+    case '-':
       sum = num1 - num2;
   }
   return sum;
