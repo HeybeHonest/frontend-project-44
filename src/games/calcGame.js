@@ -14,6 +14,9 @@ const calculate = (num1, num2, mathSign) => {
       break;
     case '-':
       sum = num1 - num2;
+      break;
+    default:
+      throw new Error('unknown operator');
   }
   return sum;
 };
